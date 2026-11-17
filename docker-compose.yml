@@ -1,0 +1,33 @@
+services:
+  nginx:
+    build:
+      context: ./nginx
+    container_name: dev-nginx
+    restart: unless-stopped
+    ports:
+      - "${NGINX_HTTP_PORT}:80"
+      - "${NGINX_HTTPS_PORT}:443"
+    volumes:
+      # Site code
+      - ${PROJECTS_ROOT}/sites/site1:/var/www/html/site1
+      - ${PROJECTS_ROOT}/sites/site2:/var/www/html/site2
+      - ${PROJECTS_ROOT}/default-host/v3client:/var/www/html/v3client
+
+      # Shared libraries
+      - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
+      - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
+
+      # SSL certs (read-only)
+      - ${PROJECTS_ROOT}/docker-env/ssl_files:/etc/nginx/certs:ro
+
+      # Logs
+      - ${PROJECTS_ROOT}/docker-env/logs/nginx:/var/log/nginx
+
+    environment:
+      - TZ=${TZ}
+    networks:
+      - dev-net
+
+networks:
+  dev-net:
+    driver: bridge
