@@ -28,6 +28,35 @@ services:
     networks:
       - dev-net
 
+  apache2:
+    build:
+      context: ./apache2
+    container_name: dev-apache2
+    restart: unless-stopped
+    ports:
+      - "${APACHE_HTTP_PORT}:8080"
+      - "${APACHE_HTTPS_PORT}:8443"
+    volumes:
+      # Site code (same roots as nginx)
+      - ${PROJECTS_ROOT}/sites/site1:/var/www/html/site1
+      - ${PROJECTS_ROOT}/sites/site2:/var/www/html/site2
+      - ${PROJECTS_ROOT}/default-host/v3client:/var/www/html/v3client
+
+      # Shared libraries
+      - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
+      - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
+
+      # SSL certs (read-only, mounted at Apache's expected path)
+      - ${PROJECTS_ROOT}/docker-env/ssl_files:/etc/apache2/certs:ro
+
+      # Logs
+      - ${PROJECTS_ROOT}/docker-env/logs/apache2:/var/log/apache2
+
+    environment:
+      - TZ=${TZ}
+    networks:
+      - dev-net
+
 networks:
   dev-net:
     driver: bridge

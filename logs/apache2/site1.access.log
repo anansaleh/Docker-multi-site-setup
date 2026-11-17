@@ -1,0 +1,7 @@
+172.18.0.1 - - [17/Nov/2026:17:37:23 +0000] "GET / HTTP/1.1" 200 39 "-" "curl/8.5.0"
+172.18.0.1 - - [17/Nov/2026:17:39:54 +0000] "GET / HTTP/1.1" 200 39 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+172.18.0.1 - - [17/Nov/2026:17:39:54 +0000] "GET /favicon.ico HTTP/1.1" 404 236 "https://site1.test:8443/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+172.18.0.1 - - [17/Nov/2026:17:39:58 +0000] "GET / HTTP/1.1" 200 39 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+172.18.0.1 - - [17/Nov/2026:17:40:14 +0000] "GET / HTTP/1.1" 200 39 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:160.0) Gecko/20100101 Firefox/160.0"
+172.18.0.1 - - [17/Nov/2026:17:40:15 +0000] "GET /favicon.ico HTTP/1.1" 404 236 "https://site1.test:8443/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:160.0) Gecko/20100101 Firefox/160.0"
+172.18.0.1 - - [17/Nov/2026:17:41:42 +0000] "GET / HTTP/1.1" 200 39 "-" "curl/8.22.0"

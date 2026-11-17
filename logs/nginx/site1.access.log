@@ -8,3 +8,6 @@
 172.18.0.1 - - [17/Nov/2026:12:25:58 +0000] "GET / HTTP/1.1" 200 39 "-" "curl/8.22.0" "-"
 172.18.0.1 - - [17/Nov/2026:12:27:56 +0000] "GET / HTTP/1.1" 200 39 "-" "curl/8.22.0" "-"
 172.18.0.1 - - [17/Nov/2026:12:29:05 +0000] "GET / HTTP/1.1" 200 39 "-" "-" "-"
+172.18.0.1 - - [17/Nov/2026:15:55:19 +0000] "GET / HTTP/1.1" 200 69 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [17/Nov/2026:15:55:19 +0000] "GET /favicon.ico HTTP/1.1" 200 69 "http://site1.test/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [17/Nov/2026:17:43:33 +0000] "GET / HTTP/1.1" 200 39 "-" "curl/8.22.0" "-"
