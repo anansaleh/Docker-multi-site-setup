@@ -19,6 +19,7 @@ services:
       - TZ=${TZ}
     depends_on:
       - php-fpm84
+      - php-fpm74
     networks:
       - dev-net
 
@@ -56,6 +57,24 @@ services:
       - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
       - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
       - ${PROJECTS_ROOT}/docker-env/logs/php-fpm84:/var/log/php
+    environment:
+      - TZ=${TZ}
+    networks:
+      - dev-net
+
+  php-fpm74:
+    build:
+      context: ./php-fpm74
+    image: dev-env-php-fpm74
+    container_name: dev-php-fpm74
+    restart: unless-stopped
+    volumes:
+      - ${PROJECTS_ROOT}/sites/site1:/var/www/html/site1
+      - ${PROJECTS_ROOT}/sites/site2:/var/www/html/site2
+      - ${PROJECTS_ROOT}/default-host/v3client:/var/www/html/v3client
+      - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
+      - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
+      - ${PROJECTS_ROOT}/docker-env/logs/php-fpm74:/var/log/php
     environment:
       - TZ=${TZ}
     networks:
