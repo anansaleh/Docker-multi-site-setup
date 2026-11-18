@@ -1,0 +1,4 @@
+[18-Nov-2026 12:08:27 Europe/London] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /var/www/html/site1/error-test.php:3
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/site1/error-test.php on line 3
