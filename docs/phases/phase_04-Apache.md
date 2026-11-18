@@ -674,6 +674,23 @@ To revert `.env` and `docker-compose.yml`:
 No data loss risk — no databases yet.
 
 ---
+## Summary of Phase 4:
+
+- ✅ 15/15 checks passed
+- ✅ Apache running concurrently with Nginx on ports 8080/8443
+- ✅ Same site roots, same SSL cert, both work over HTTP + HTTPS
+- ✅ No interference with Nginx (regression test passed)
+- ✅ All URLs working in browser
+- ✅ Apache logs land on host
+
+---
+
+Carry-forward items for future cleanup (Phase 20):
+- Remove redundant `sed` from Apache Dockerfile
+- Fix Apache log timezone (install tzdata)
+- Fix stale `.env` header comment
+
+---
 
 ## Next Phase
 
