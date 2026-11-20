@@ -1,5 +1,27 @@
 .env
+
+data_files/mysql80/*
 !data_files/mysql80/.gitkeep
+
+logs/apache2/*
+!logs/apache2/.gitkeep
+
+logs/mysql/*
 !logs/mysql/.gitkeep
 
+logs/nginx/*
+!logs/nginx/.gitkeep
+
+logs/php-fpm74/*
+!logs/php-fpm74/.gitkeep
+
+logs/php-fpm84/*
+!logs/php-fpm84/.gitkeep
+
+
+data_files/mariadb11/*
+!data_files/mariadb11/.gitkeep
+
+logs/mariadb/*
+!logs/mariadb/.gitkeep
 
