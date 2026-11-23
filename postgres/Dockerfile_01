@@ -1,0 +1,13 @@
+# ============================================================
+# PostgreSQL 15 container
+# Version controlled via .env (POSTGRES_VERSION)
+# Base image: official PostgreSQL Docker image
+#
+# Config overrides are passed via `-c` flags in docker-compose.yml.
+# No custom config file is copied — PostgreSQL's defaults are kept,
+# and only specific settings are overridden at container start.
+# ============================================================
+ARG POSTGRES_VERSION=15
+FROM postgres:${POSTGRES_VERSION}
+
+# Default entrypoint and command are inherited from the base image.

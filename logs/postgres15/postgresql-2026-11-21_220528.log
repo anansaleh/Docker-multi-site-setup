@@ -1,0 +1,19 @@
+2026-11-21 22:05:28.292 UTC [54] LOG:  starting PostgreSQL 15.20 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-11-21 22:05:28.300 UTC [54] LOG:  listening on Unix socket "/run/postgresql/.s.PGSQL.5432"
+2026-11-21 22:05:28.340 UTC [58] LOG:  database system was shut down at 2026-11-21 22:05:25 UTC
+2026-11-21 22:05:28.384 UTC [54] LOG:  database system is ready to accept connections
+2026-11-21 22:05:28.471 UTC [64] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:05:28.482 UTC [64] dev_user@postgres/[unknown] LOG:  connection authorized: user=dev_user database=postgres application_name=psql
+2026-11-21 22:05:28.648 UTC [64] dev_user@postgres/psql LOG:  disconnection: session time: 0:00:00.176 user=dev_user database=postgres host=[local]
+2026-11-21 22:05:28.654 UTC [66] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:05:28.664 UTC [66] dev_user@postgres/[unknown] LOG:  connection authorized: user=dev_user database=postgres application_name=psql
+2026-11-21 22:05:30.198 UTC [66] dev_user@postgres/psql LOG:  disconnection: session time: 0:00:01.544 user=dev_user database=postgres host=[local]
+2026-11-21 22:05:30.205 UTC [54] LOG:  received fast shutdown request
+2026-11-21 22:05:30.210 UTC [54] LOG:  aborting any active transactions
+2026-11-21 22:05:30.213 UTC [54] LOG:  background worker "logical replication launcher" (PID 61) exited with exit code 1
+2026-11-21 22:05:30.214 UTC [56] LOG:  shutting down
+2026-11-21 22:05:30.218 UTC [56] LOG:  checkpoint starting: shutdown immediate
+2026-11-21 22:05:30.344 UTC [74] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:05:30.344 UTC [74] dev_user@app_local/[unknown] FATAL:  the database system is shutting down
+2026-11-21 22:05:28.802 UTC [56] LOG:  checkpoint complete: wrote 931 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.370 s, sync=0.000 s, total=0.000 s; sync files=301, longest=0.014 s, average=0.002 s; distance=4320 kB, estimate=4320 kB
+2026-11-21 22:05:29.030 UTC [54] LOG:  database system is shut down

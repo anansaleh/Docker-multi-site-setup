@@ -1,0 +1,22 @@
+# Normalize text files in Git and default to LF
+* text=auto eol=lf
+
+# Explicitly enforce LF for shell scripts, Dockerfiles, configs, and compose files
+*.sh text eol=lf
+Dockerfile* text eol=lf
+*.conf text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.env* text eol=lf
+
+# Optional: keep Windows batch/PowerShell scripts as CRLF if needed
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Treat binary assets as untouched binary data
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.tar.gz binary

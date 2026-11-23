@@ -25,3 +25,9 @@ data_files/mariadb11/*
 logs/mariadb/*
 !logs/mariadb/.gitkeep
 
+data_files/postgres15/*
+!data_files/postgres15/.gitkeep
+
+logs/postgres/*
+!logs/postgres/.gitkeep
+

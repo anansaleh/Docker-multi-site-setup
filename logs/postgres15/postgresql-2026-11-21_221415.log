@@ -1,0 +1,202 @@
+2026-11-21 22:14:15.354 UTC [1] LOG:  starting PostgreSQL 15.20 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-11-21 22:14:15.354 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-11-21 22:14:15.354 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-11-21 22:14:15.367 UTC [1] LOG:  listening on Unix socket "/run/postgresql/.s.PGSQL.5432"
+2026-11-21 22:14:15.406 UTC [30] LOG:  database system was shut down at 2026-11-21 22:11:22 UTC
+2026-11-21 22:14:15.509 UTC [1] LOG:  database system is ready to accept connections
+2026-11-21 22:14:19.180 UTC [40] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:19.184 UTC [40] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:14:19.265 UTC [40] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.085 user=dev_user database=app_local host=[local]
+2026-11-21 22:14:29.323 UTC [47] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:29.335 UTC [47] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:14:29.370 UTC [47] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.047 user=dev_user database=app_local host=[local]
+2026-11-21 22:14:34.396 UTC [54] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:34.407 UTC [54] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=psql
+2026-11-21 22:14:34.480 UTC [54] dev_user@app_local/psql LOG:  disconnection: session time: 0:00:00.083 user=dev_user database=app_local host=[local]
+2026-11-21 22:14:39.418 UTC [62] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:39.426 UTC [62] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:14:39.457 UTC [62] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:14:48.985 UTC [69] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:48.994 UTC [69] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:14:49.029 UTC [69] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.044 user=dev_user database=app_local host=[local]
+2026-11-21 22:14:59.180 UTC [77] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:14:59.192 UTC [77] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:14:59.223 UTC [77] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.043 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:05.261 UTC [84] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:05.274 UTC [84] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=psql
+2026-11-21 22:15:05.312 UTC [84] dev_user@app_local/psql LOG:  disconnection: session time: 0:00:00.051 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:09.283 UTC [91] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:09.296 UTC [91] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:09.354 UTC [91] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.071 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:18.887 UTC [99] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:18.897 UTC [99] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:18.936 UTC [99] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.048 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:28.985 UTC [106] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:28.995 UTC [106] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:29.024 UTC [106] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:39.079 UTC [114] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:39.088 UTC [114] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:39.124 UTC [114] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.045 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:48.616 UTC [121] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:48.629 UTC [121] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:48.660 UTC [121] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.044 user=dev_user database=app_local host=[local]
+2026-11-21 22:15:58.734 UTC [130] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:15:58.745 UTC [130] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:15:58.777 UTC [130] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.043 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:08.824 UTC [137] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:08.833 UTC [137] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:08.864 UTC [137] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:18.921 UTC [145] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:18.935 UTC [145] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:18.969 UTC [145] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.048 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:28.491 UTC [152] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:28.500 UTC [152] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:28.532 UTC [152] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.041 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:38.585 UTC [160] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:38.597 UTC [160] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:38.629 UTC [160] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.044 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:48.689 UTC [167] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:48.700 UTC [167] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:48.744 UTC [167] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.055 user=dev_user database=app_local host=[local]
+2026-11-21 22:16:54.353 UTC [168] [unknown]@[unknown]/[unknown] LOG:  connection received: host=172.19.0.1 port=48044
+2026-11-21 22:16:58.797 UTC [176] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:16:58.809 UTC [176] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:16:58.846 UTC [176] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.049 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:08.900 UTC [183] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:08.909 UTC [183] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:08.940 UTC [183] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:18.996 UTC [191] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:19.007 UTC [191] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:19.040 UTC [191] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.044 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:29.091 UTC [198] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:29.101 UTC [198] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:29.130 UTC [198] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:39.185 UTC [206] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:39.196 UTC [206] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:39.231 UTC [206] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.045 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:49.286 UTC [213] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:49.298 UTC [213] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:49.336 UTC [213] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.050 user=dev_user database=app_local host=[local]
+2026-11-21 22:17:59.482 UTC [221] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:17:59.493 UTC [221] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:17:59.524 UTC [221] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.041 user=dev_user database=app_local host=[local]
+2026-11-21 22:18:09.577 UTC [228] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:18:09.589 UTC [228] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:18:09.623 UTC [228] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.045 user=dev_user database=app_local host=[local]
+2026-11-21 22:18:19.677 UTC [236] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:18:19.688 UTC [236] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:18:19.720 UTC [236] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.043 user=dev_user database=app_local host=[local]
+2026-11-21 22:18:29.783 UTC [243] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:18:29.793 UTC [243] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:18:29.823 UTC [243] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:18:39.894 UTC [251] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:18:39.904 UTC [251] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:18:39.934 UTC [251] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:18:49.988 UTC [258] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:18:49.997 UTC [258] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:18:50.028 UTC [258] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:00.081 UTC [266] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:00.091 UTC [266] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:00.122 UTC [266] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:10.176 UTC [273] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:10.187 UTC [273] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:10.219 UTC [273] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.043 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:15.315 UTC [28] LOG:  checkpoint starting: time
+2026-11-21 22:19:16.170 UTC [28] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.743 s, sync=0.045 s, total=0.885 s; sync files=8, longest=0.014 s, average=0.006 s; distance=7 kB, estimate=7 kB
+2026-11-21 22:19:20.279 UTC [281] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:20.291 UTC [281] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:20.323 UTC [281] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.044 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:30.372 UTC [288] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:30.382 UTC [288] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:30.414 UTC [288] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.041 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:40.466 UTC [296] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:40.475 UTC [296] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:40.506 UTC [296] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:19:50.560 UTC [303] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:19:50.569 UTC [303] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:19:50.598 UTC [303] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.037 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:00.652 UTC [311] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:00.661 UTC [311] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:00.692 UTC [311] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:10.753 UTC [318] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:10.764 UTC [318] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:10.794 UTC [318] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:20.849 UTC [326] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:20.861 UTC [326] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:20.891 UTC [326] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.042 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:30.941 UTC [333] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:30.949 UTC [333] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:30.979 UTC [333] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:41.033 UTC [341] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:41.043 UTC [341] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:41.072 UTC [341] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:20:51.123 UTC [348] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:20:51.132 UTC [348] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:20:51.162 UTC [348] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:01.220 UTC [356] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:01.230 UTC [356] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:01.261 UTC [356] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.041 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:11.313 UTC [363] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:11.321 UTC [363] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:11.352 UTC [363] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:21.404 UTC [371] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:21.414 UTC [371] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:21.444 UTC [371] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:31.496 UTC [378] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:31.506 UTC [378] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:31.536 UTC [378] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:41.582 UTC [386] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:41.592 UTC [386] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:41.622 UTC [386] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:21:51.674 UTC [393] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:21:51.683 UTC [393] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:21:51.713 UTC [393] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:01.765 UTC [401] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:01.775 UTC [401] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:01.805 UTC [401] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:11.857 UTC [408] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:11.867 UTC [408] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:11.897 UTC [408] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:21.951 UTC [416] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:21.961 UTC [416] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:21.989 UTC [416] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:32.067 UTC [424] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:32.076 UTC [424] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:32.106 UTC [424] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:42.166 UTC [432] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:42.177 UTC [432] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:42.206 UTC [432] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:22:52.255 UTC [439] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:22:52.264 UTC [439] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:22:52.295 UTC [439] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.039 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:02.347 UTC [447] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:02.357 UTC [447] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:02.394 UTC [447] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.046 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:12.445 UTC [454] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:12.456 UTC [454] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:12.489 UTC [454] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.043 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:22.542 UTC [462] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:22.553 UTC [462] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:22.582 UTC [462] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:32.636 UTC [469] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:32.645 UTC [469] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:32.676 UTC [469] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:42.729 UTC [477] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:42.741 UTC [477] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:42.778 UTC [477] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.049 user=dev_user database=app_local host=[local]
+2026-11-21 22:23:52.843 UTC [484] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:23:52.853 UTC [484] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:23:52.883 UTC [484] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.040 user=dev_user database=app_local host=[local]
+2026-11-21 22:24:02.933 UTC [492] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:24:02.940 UTC [492] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:24:02.971 UTC [492] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.038 user=dev_user database=app_local host=[local]
+2026-11-21 22:24:13.028 UTC [499] [unknown]@[unknown]/[unknown] LOG:  connection received: host=[local]
+2026-11-21 22:24:13.038 UTC [499] dev_user@app_local/[unknown] LOG:  connection authorized: user=dev_user database=app_local application_name=pg_isready
+2026-11-21 22:24:13.077 UTC [499] dev_user@app_local/pg_isready LOG:  disconnection: session time: 0:00:00.048 user=dev_user database=app_local host=[local]
+2026-11-21 22:24:13.447 UTC [1] LOG:  received fast shutdown request
+2026-11-21 22:24:13.465 UTC [1] LOG:  aborting any active transactions
+2026-11-21 22:24:13.469 UTC [1] LOG:  background worker "logical replication launcher" (PID 33) exited with exit code 1
+2026-11-21 22:24:13.469 UTC [28] LOG:  shutting down
+2026-11-21 22:24:13.474 UTC [28] LOG:  checkpoint starting: shutdown immediate
+2026-11-21 22:24:13.526 UTC [28] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.057 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=7 kB
+2026-11-21 22:24:13.552 UTC [1] LOG:  database system is shut down
