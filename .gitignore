@@ -40,3 +40,9 @@ data_files/mongodb8/*
 logs/mongodb/*
 !logs/mongodb/.gitkeep
 
+data_files/couchdb34/*
+!data_files/couchdb34/.gitkeep
+
+logs/couchdb/*
+!logs/couchdb/.gitkeep
+

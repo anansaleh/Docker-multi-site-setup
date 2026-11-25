@@ -1137,3 +1137,5 @@ net:
 * **Inside-container `bindIp` (`0.0.0.0`):** Because Docker forwards host traffic from `127.0.0.1:27017` into the container's network interface, `mongod` inside the container needs `bindIp: 0.0.0.0` while `docker-compose.yml` keeps it restricted to `127.0.0.1:27017:27017` on your host.
 * **Rebuild & start:** Run `docker compose up -d --build` so Docker builds the custom image with `mongodb/mongod.conf` baked in.
 * **Log rotation inside the volume:** If you also want `mongod.log` inside `mongo_logs` rotated periodically, run `db.adminCommand({ logRotate: 1 })` or send `SIGUSR1` to `mongod` so it rotates cleanly with `logRotate: reopen`.
+
+---

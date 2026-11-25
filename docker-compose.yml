@@ -190,6 +190,31 @@ services:
     networks:
       - dev-net
 
+  couchdb:
+    build:
+      context: ./couchdb
+      args:
+        COUCHDB_VERSION: ${COUCHDB_VERSION}
+    image: dev-env-couchdb
+    container_name: dev-couchdb
+    restart: unless-stopped
+    ports:
+      - "${COUCHDB_PORT}:5984"
+    volumes:
+      - ${PROJECTS_ROOT}/docker-env/data_files/couchdb34:/opt/couchdb/data
+      - ${PROJECTS_ROOT}/docker-env/logs/couchdb:/var/log/couchdb
+    environment:
+      - COUCHDB_USER=${COUCHDB_USER}
+      - COUCHDB_PASSWORD=${COUCHDB_PASSWORD}
+      - TZ=${TZ}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5984/_up"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - dev-net
 networks:
   dev-net:
     driver: bridge
