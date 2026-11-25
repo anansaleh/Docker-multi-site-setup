@@ -31,3 +31,12 @@ data_files/postgres15/*
 logs/postgres/*
 !logs/postgres/.gitkeep
 
+logs/postgres15/*
+!logs/postgres15/.gitkeep
+
+data_files/mongodb8/*
+!data_files/mongodb8/.gitkeep
+
+logs/mongodb/*
+!logs/mongodb/.gitkeep
+

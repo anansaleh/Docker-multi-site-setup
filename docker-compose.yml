@@ -131,79 +131,19 @@ services:
     networks:
       - dev-net
 
-  # postgres:
-  #   build:
-  #     context: ./postgres
-  #     args:
-  #       POSTGRES_VERSION: ${POSTGRES_VERSION}
-  #   image: dev-env-postgres
-  #   container_name: dev-postgres
-  #   restart: unless-stopped
-  #   ports:
-  #     - "${POSTGRES_PORT}:5432"
-  #   volumes:
-  #     - ${PROJECTS_ROOT}/docker-env/data_files/postgres15:/var/lib/postgresql/data
-  #     - ${PROJECTS_ROOT}/docker-env/logs/postgres:/var/log/postgresql
-  #   environment:
-  #     - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-  #     - POSTGRES_USER=${POSTGRES_USER}
-  #     - POSTGRES_DB=${POSTGRES_DB}
-  #     - TZ=${TZ}
-  #   command:
-  #     - postgres
-  #     - -c
-  #     - listen_addresses=*
-  #     - -c
-  #     - max_connections=200
-  #     - -c
-  #     - shared_buffers=256MB
-  #     - -c
-  #     - logging_collector=on
-  #     - -c
-  #     - log_directory=/var/log/postgresql
-  #     - -c
-  #     - log_filename=postgresql-%Y-%m-%d.log
-  #     - -c
-  #     - log_rotation_age=1d
-  #     - -c
-  #     - log_rotation_size=100MB
-  #     - -c
-  #     - log_min_duration_statement=2000
-  #     - -c
-  #     - timezone=UTC
-  #     - -c
-  #     - log_timezone=UTC
-  #   healthcheck:
-  #     test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-  #     interval: 10s
-  #     timeout: 5s
-  #     retries: 5
-  #     start_period: 30s
-  #   networks:
-  #     - dev-net
-  postgres15:
+  postgres:
     build:
       context: ./postgres
       dockerfile: Dockerfile
       args:
         POSTGRES_IMAGE_TAG: ${POSTGRES15_IMAGE_TAG:-15-alpine}
-    # container_name: ${POSTGRES15_CONTAINER_NAME:-db_postgres15}
-    image: dev-env-postgres
-    container_name: dev-postgres
+    container_name: ${POSTGRES15_CONTAINER_NAME:-db_postgres15}
     restart: unless-stopped
-
     environment:
       POSTGRES_DB: ${POSTGRES15_DB}
       POSTGRES_USER: ${POSTGRES15_USER}
       POSTGRES_PASSWORD: ${POSTGRES15_PASSWORD}
       PGDATA: ${POSTGRES15_DATA_DIR:-/var/lib/postgresql/data/pgdata}
-      # TZ: ${TZ}    
-
-  #   environment:
-  #     - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-  #     - POSTGRES_USER=${POSTGRES_USER}
-  #     - POSTGRES_DB=${POSTGRES_DB}
-  #     - TZ=${TZ}      
     command:
       - postgres
       - -c
@@ -211,8 +151,8 @@ services:
     ports:
       - "${POSTGRES15_HOST_PORT:-5432}:5432"
     volumes:
-      - ${PROJECTS_ROOT}/docker-env/data_files/postgres15:/var/lib/postgresql/data
-      - ${PROJECTS_ROOT}/docker-env/logs/postgres15:${POSTGRES15_LOG_DIR:-/var/log/postgresql}
+      - ./data_files/postgres15:/var/lib/postgresql/data
+      - ./logs/postgres15:${POSTGRES15_LOG_DIR:-/var/log/postgresql}
 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-dev_user} -d $${POSTGRES_DB:-app_local}"]
@@ -221,7 +161,35 @@ services:
       retries: 5
       start_period: 15s
     networks:
-      - dev-net      
+      - dev-net   
+
+  mongodb:
+    build:
+      context: ./mongodb
+      args:
+        MONGODB_VERSION: ${MONGODB_VERSION}
+    image: dev-env-mongodb
+    container_name: dev-mongodb
+    restart: unless-stopped
+    ports:
+      - "${MONGODB_PORT}:27017"
+    volumes:
+      - ${PROJECTS_ROOT}/docker-env/data_files/mongodb8:/data/db
+      - ${PROJECTS_ROOT}/docker-env/logs/mongodb:/var/log/mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_ROOT_PASSWORD}
+      - TZ=${TZ}
+    command: ["mongod", "--config", "/etc/mongo/mongod.conf", "--auth"]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - dev-net
+
 networks:
   dev-net:
     driver: bridge
