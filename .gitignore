@@ -52,3 +52,6 @@ data_files/redis/*
 logs/redis/*
 !logs/redis/.gitkeep
 
+data_files/pgadmin/*
+!data_files/pgadmin/.gitkeep
+
