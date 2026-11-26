@@ -46,3 +46,9 @@ data_files/couchdb34/*
 logs/couchdb/*
 !logs/couchdb/.gitkeep
 
+data_files/redis/*
+!data_files/redis/.gitkeep
+
+logs/redis/*
+!logs/redis/.gitkeep
+

@@ -215,6 +215,35 @@ services:
       start_period: 30s
     networks:
       - dev-net
+
+  redis:
+    build:
+      context: ./redis
+      args:
+        REDIS_VERSION: ${REDIS_VERSION}
+    image: dev-env-redis
+    container_name: dev-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - ${PROJECTS_ROOT}/docker-env/data_files/redis:/data
+      - ${PROJECTS_ROOT}/docker-env/logs/redis:/var/log/redis
+    environment:
+      - TZ=${TZ}
+    command: >
+      redis-server
+      /usr/local/etc/redis/redis.conf
+      --requirepass ${REDIS_PASSWORD}
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "--no-auth-warning", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - dev-net
+
 networks:
   dev-net:
     driver: bridge
