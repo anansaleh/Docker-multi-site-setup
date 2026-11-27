@@ -370,6 +370,52 @@ services:
     networks:
       - dev-net
 
+  php-worker84:
+    build:
+      context: ./php-worker84
+    image: dev-env-php-worker84
+    container_name: dev-php-worker84
+    restart: unless-stopped
+    volumes:
+      - ${PROJECTS_ROOT}/sites/site1:/var/www/html/site1
+      - ${PROJECTS_ROOT}/sites/site2:/var/www/html/site2
+      - ${PROJECTS_ROOT}/default-host/v3client:/var/www/html/v3client
+      - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
+      - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
+      - ${PROJECTS_ROOT}/backup_data:/backup
+    environment:
+      - TZ=${TZ}
+    depends_on:
+      - redis
+      - mysql
+      - mariadb
+      - postgres
+    networks:
+      - dev-net
+
+  php-worker74:
+    build:
+      context: ./php-worker74
+    image: dev-env-php-worker74
+    container_name: dev-php-worker74
+    restart: unless-stopped
+    volumes:
+      - ${PROJECTS_ROOT}/sites/site1:/var/www/html/site1
+      - ${PROJECTS_ROOT}/sites/site2:/var/www/html/site2
+      - ${PROJECTS_ROOT}/default-host/v3client:/var/www/html/v3client
+      - ${PROJECTS_ROOT}/default-host/client_data:/home/client_data
+      - ${PROJECTS_ROOT}/default-host/server_side:/home/server_side
+      - ${PROJECTS_ROOT}/backup_data:/backup
+    environment:
+      - TZ=${TZ}
+    depends_on:
+      - redis
+      - mysql
+      - mariadb
+      - postgres
+    networks:
+      - dev-net
+      
 networks:
   dev-net:
     driver: bridge
