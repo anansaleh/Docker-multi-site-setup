@@ -93,6 +93,7 @@ services:
     volumes:
       - ${PROJECTS_ROOT}/docker-env/data_files/mysql80:/var/lib/mysql
       - ${PROJECTS_ROOT}/docker-env/logs/mysql:/var/log/mysql
+      - ${PROJECTS_ROOT}/backup_data/mysql:/backup
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - TZ=${TZ}
@@ -119,6 +120,7 @@ services:
     volumes:
       - ${PROJECTS_ROOT}/docker-env/data_files/mariadb11:/var/lib/mysql
       - ${PROJECTS_ROOT}/docker-env/logs/mariadb:/var/log/mysql
+      - ${PROJECTS_ROOT}/backup_data/mariadb:/backup
     environment:
       - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
       - TZ=${TZ}
@@ -153,6 +155,7 @@ services:
     volumes:
       - ./data_files/postgres15:/var/lib/postgresql/data
       - ./logs/postgres15:${POSTGRES15_LOG_DIR:-/var/log/postgresql}
+      - ${PROJECTS_ROOT}/backup_data/postgres:/backup
 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-dev_user} -d $${POSTGRES_DB:-app_local}"]
@@ -176,6 +179,7 @@ services:
     volumes:
       - ${PROJECTS_ROOT}/docker-env/data_files/mongodb8:/data/db
       - ${PROJECTS_ROOT}/docker-env/logs/mongodb:/var/log/mongodb
+      - ${PROJECTS_ROOT}/backup_data/mongodb:/backup
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGODB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_ROOT_PASSWORD}
@@ -203,6 +207,7 @@ services:
     volumes:
       - ${PROJECTS_ROOT}/docker-env/data_files/couchdb34:/opt/couchdb/data
       - ${PROJECTS_ROOT}/docker-env/logs/couchdb:/var/log/couchdb
+      - ${PROJECTS_ROOT}/backup_data/couchdb:/backup
     environment:
       - COUCHDB_USER=${COUCHDB_USER}
       - COUCHDB_PASSWORD=${COUCHDB_PASSWORD}

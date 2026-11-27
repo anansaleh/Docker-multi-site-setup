@@ -55,3 +55,18 @@ docker-env/logs/redis/*
 docker-env/data_files/pgadmin/*
 !docker-env/data_files/pgadmin/.gitkeep
 
+backup_data/mysql/*
+!backup_data/mysql/.gitkeep
+
+backup_data/mariadb/*
+!backup_data/mariadb/.gitkeep
+
+backup_data/postgres/*
+!backup_data/postgres/.gitkeep
+
+backup_data/mongodb/*
+!backup_data/mongodb/.gitkeep
+
+backup_data/couchdb/*
+!backup_data/couchdb/.gitkeep
+
