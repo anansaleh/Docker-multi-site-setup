@@ -504,7 +504,20 @@ rm -rf ~/Projects01/docker-env/data_files/mongodb8
 mkdir -p ~/Projects01/docker-env/data_files/mongodb8
 docker compose up -d mongodb
 ```
+Summary of Phase 18:
 
+- ✅ 9/9 checks passed
+- ✅ Full log audit complete
+- ✅ MongoDB verbosity fixed (quiet: true after verbosity: -1 was rejected)
+- ✅ All 8 file-logging services verified writing to host
+- ✅ CouchDB/Redis stderr logging documented
+- ✅ Apache PHP error verification
+- ✅ Test files cleaned up
+- ✅ Definitive log reference table created
+
+**18 containers still running** (no new services added — pure audit phase).
+
+> **Important note:** The MongoDB fix required wiping data (Phase 13 restart bug). It's now healthier log-wise, but this confirms MongoDB's ephemeral nature — data wipe is an ongoing operational cost.
 ---
 
 ## Next Phase

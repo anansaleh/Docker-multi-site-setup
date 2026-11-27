@@ -1,57 +1,57 @@
-.env
+docker-env/.env
 
-data_files/mysql80/*
-!data_files/mysql80/.gitkeep
+docker-env/data_files/mysql80/*
+!docker-env/data_files/mysql80/.gitkeep
 
-logs/apache2/*
-!logs/apache2/.gitkeep
+docker-env/logs/apache2/*
+!docker-env/logs/apache2/.gitkeep
 
-logs/mysql/*
-!logs/mysql/.gitkeep
+docker-env/logs/mysql/*
+!docker-env/logs/mysql/.gitkeep
 
-logs/nginx/*
-!logs/nginx/.gitkeep
+docker-env/logs/nginx/*
+!docker-env/logs/nginx/.gitkeep
 
-logs/php-fpm74/*
-!logs/php-fpm74/.gitkeep
+docker-env/logs/php-fpm74/*
+!docker-env/logs/php-fpm74/.gitkeep
 
-logs/php-fpm84/*
-!logs/php-fpm84/.gitkeep
+docker-env/logs/php-fpm84/*
+!docker-env/logs/php-fpm84/.gitkeep
 
 
-data_files/mariadb11/*
-!data_files/mariadb11/.gitkeep
+docker-env/data_files/mariadb11/*
+!docker-env/data_files/mariadb11/.gitkeep
 
-logs/mariadb/*
-!logs/mariadb/.gitkeep
+docker-env/logs/mariadb/*
+!docker-env/logs/mariadb/.gitkeep
 
-data_files/postgres15/*
-!data_files/postgres15/.gitkeep
+docker-env/data_files/postgres15/*
+!docker-env/data_files/postgres15/.gitkeep
 
-logs/postgres/*
-!logs/postgres/.gitkeep
+docker-env/logs/postgres/*
+!docker-env/logs/postgres/.gitkeep
 
-logs/postgres15/*
-!logs/postgres15/.gitkeep
+docker-env/logs/postgres15/*
+!docker-env/logs/postgres15/.gitkeep
 
-data_files/mongodb8/*
-!data_files/mongodb8/.gitkeep
+docker-env/data_files/mongodb8/*
+!docker-env/data_files/mongodb8/.gitkeep
 
-logs/mongodb/*
-!logs/mongodb/.gitkeep
+docker-env/logs/mongodb/*
+!docker-env/logs/mongodb/.gitkeep
 
-data_files/couchdb34/*
-!data_files/couchdb34/.gitkeep
+docker-env/data_files/couchdb34/*
+!docker-env/data_files/couchdb34/.gitkeep
 
-logs/couchdb/*
-!logs/couchdb/.gitkeep
+docker-env/logs/couchdb/*
+!docker-env/logs/couchdb/.gitkeep
 
-data_files/redis/*
-!data_files/redis/.gitkeep
+docker-env/data_files/redis/*
+!docker-env/data_files/redis/.gitkeep
 
-logs/redis/*
-!logs/redis/.gitkeep
+docker-env/logs/redis/*
+!docker-env/logs/redis/.gitkeep
 
-data_files/pgadmin/*
-!data_files/pgadmin/.gitkeep
+docker-env/data_files/pgadmin/*
+!docker-env/data_files/pgadmin/.gitkeep
 
